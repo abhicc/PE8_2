@@ -29,7 +29,7 @@ ui2 <- fluidPage(
       # input for selecting variable
       varSelectInput(inputId = "variable", 
                      label = "Select Variable to Display", 
-                     data = gpmdata %>% select(lifeExp, pop, gdpPercap))
+                     data = gpmdata %>% dplyr::select(lifeExp, pop, gdpPercap))
     ),
     
     # show plot
